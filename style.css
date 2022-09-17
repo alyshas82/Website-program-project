@@ -1,39 +1,50 @@
 html, body 
 {
-  margin-left: 162px;
+  width: 90%; 
+  height: 90%;
+  padding-left: 2%; 
+  margin-left: 9%;
+  margin-right: 1%; 
   margin-top: 50px; 
-  background-color: rgb(251, 182, 210))
+  background-color: rgb(255, 255, 255); 
 }
 
+/*margin: 100px;*/
+  
 *{
   box-sizing:border-box;
   margin: 0px; 
   padding: 0px; 
 }
+
+
 /*Header 1 and Proper customization */
 h1 {
   color:#442363;
   text-shadow: 2px 2px 5px #542461;
   text-align: center;
   position: absolute;
-  left: 600px;
+  left: 40%;
   top: 10px;
 }
 /*Customizing menu as a whole */
 #menu-bar ul 
 {
-  list-style : none; 
+  padding: 2px; 
+  margin: 0px;
+  list-style: none; 
   color: rgb(125, 79, 129); 
   text-transform:uppercase; 
   text-decoration: none;
+  position: absolute; 
 }
 
 /*Customizing menu items and placement */
 #menu-bar ul li
 {
   background-color: transparent;
-  width: 170px; 
-  border: 1px solid #7d4b81;
+  width: 200px; 
+  border: 1px solid #ffffff;
   border-radius: 30px;
   height: 50px;
   line-height: 50px;
@@ -41,8 +52,8 @@ h1 {
   float: left; 
   font-size: 14px; 
   position: relative;
-  margin-right: 29px; 
-  font-family: Georgia,'Times New Roman', Times;
+  margin-right: 2%; 
+  font-family: Georgia,"Times New Roman", Times;
   text-shadow: 2px 2px 5px #542461;
   text-decoration:none; 
 } 
@@ -67,4 +78,17 @@ h1 {
 #menu-bar ul li:hover > ul 
 {
   display:block;
+}
+
+
+  .box {
+  display: grid;
+  width: 540px;
+  grid-template-columns: 120px 120px 120px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.box :first-child {
+    align-self: center;
 }
