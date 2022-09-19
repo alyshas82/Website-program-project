@@ -4,62 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>All Faces</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src= "https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
 </head>
 
 
 <body 
-  <a href = <img src ="Images/Allfaces.jpg"></a>
 
-  
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 
    
   <h1>All Faces</h1>
   
-  <div id = "menu-bar">
-<ul>
-  <li><a href = "index.html" style="text-decoration:none;">Home</a></li>
-  <li>Indie Mix
-      <ul> 
-        <li><a href = "All Faces.html" style = "text-decoration: none;">All Faces</a></li>
-        <li><a href = "Motherfolk.html" style = "text-decoration: none;">Motherfolk</a></li>
-      </ul>
-</li>
-  <li>Pop
-      <ul> 
-        <li><a href = "Harry Styles.html" style = "text-decoration:none;">Harry Styles</a></li>
-        <li><a href = "Taylor Swift.html"style = "text-decoration:none;">Taylor Swift</a></li>
-      </ul>
-</li> 
-  <li>Classical
-      <ul> 
-        <li><a href = "chopin.html" style = "text-decoration:none;"> Chopin</li>
-        <li><a href = "debussy.html" style = "text-decoration:none;">Debussy</li>
-      </ul>
-  </li>
-</ul>
+  <div id = "nav-placeholder">
   </div>
+  <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
+  
+
+  
 
 <!-- content below -->
+
+
+ <style> img {
+  width: 300px; 
+  position: relative; 
+  height: 300px; 
+  margin-top: 200px;
+  align-self: left;
+ } 
+ 
+ </style>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6WfljW3ZJXQGUU2pPu9RQt?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  
    <a href = <img src ="Images/Allfaces.jpg"></a>
  <img src ="https://i.ytimg.com/vi/bSBMnGrlQrQ/maxresdefault.jpg" 
    width ="700" height = "500"/> 
 <div class="box">
-<!--  
-  <div>One</div>
-  <div>Two</div>
-  <div>Three
-    <br>has
-    <br>extra
-    <br>text
-  </div>
-  <div>Four</div>
-  <div>Five</div>
-  <div>Six</div>
-</div> 
--->
+
 
 
 

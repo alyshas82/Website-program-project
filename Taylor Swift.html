@@ -4,45 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <title>Tayler Swift</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"> </script>
 </head>
 
 <body>
 
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 
   <h1>Taylor Swift</h1>
-  
-  <div id = "menu-bar">
-<ul>
-  <li><a href = "index.html">Home</a></li>
-  <li>Indie Mix
-      <ul> 
-        <li><a href = "All Faces.html" style="text-decoration:none;">All Faces</a></li>
-        <li><a href= "Motherfolk.html" style="text-decoration:none;">Motherfolk</a></li>
-      </ul>
-</li>
-  <li>Pop
-      <ul> 
-        <li><a href = "Harry Styles.html" style = "text-decoration:none;">Harry Styles</a></li>
-        <li><a href = "Taylor Swift.html" style = "text-decoration:none;">Taylor Swift</a></li>
-      </ul>
-</li> 
-  <li>Classical
-      <ul> 
-        <li><a href = "chopin.html" style = "text-decoration:none;">Chopin</a></li>
-        <li> <a href = "debussy.html" style = "text-decoration:none;">Debussy</a></li>
-      </ul>
-  </li>
-</ul>
+
+  <div id="nav-placeholder">
   </div>
+  <script>
+    $.get("navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
 
- <iframe width="320" height="245" style = "margin-top: 200px; margin-left: 800px;"  src="https://www.youtube.com/embed/tgbNymZ7vqY" 
-</iframe>
+  <iframe width="320" height="245" style="margin-top: 200px; margin-left: 800px;"
+    src="https://www.youtube.com/embed/tgbNymZ7vqY" </iframe>
 
 
-  
+
 </body>
 
 </html>

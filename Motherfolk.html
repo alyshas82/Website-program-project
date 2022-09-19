@@ -4,48 +4,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Mothe Folk</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src= "https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"> </script>
 </head>
 
 <body>
 
-  <h1>Find New Favourites</h1>
-  
-  <div id = "menu-bar">
-<ul>
-  <li>Home</li>
-  <li>Indie Mix
-      <ul> 
-        <li> <a href = "All Faces.html" style = "text-decoration: none;">All Faces</a></li>
-        <li> <a href = "Motherfolk.html" style = "text-decoration:none;"> Motherfolk</a></li>
-      </ul>
-</li>
-  <li>Pop
-      <ul> 
-        <li><a href = "Harry Styles.html" style = "text-decoration:none;">Harry Styles</a></li>
-        <li><a href = "Taylor Swift.html" style = "text-decoration: none;">Taylor Swift</a></li>
-      </ul>
-</li> 
-  <li>Classical
-      <ul> 
-        <li><a href = "chopin.html" style = "text-decoration:none;">Chopin</a></li>
-        <li><a href = "debussy.html" style = "text-decoration:none;">Debussy</a></li>
-      </ul>
-  </li>
-</ul>
+
+  <h1>Motherfolk</h1>
+  <div id = "nav-placeholder">
   </div>
+  <script>
+    $.get("navigation.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
 
   <!-- content below  here -->
+
+ <style> img {
+  width: 500px; 
+  position: relative; 
+height: 600px; 
+  margin-top: 100px; 
+ } 
+ 
+ </style>
+  
   <a href = <img src ="Images/motherfolk.jpg"></a>
+
+  <div class = "image"> 
  <img src ="https://images.squarespace-cdn.com/content/v1/559c30ebe4b02b8a201788f7/1628642206864-CL1G1RFKEFXUL2OMX3PX/Motherfolk+1.jpg?format=1000w" 
-   width ="800" height = "600"/>
-
-
-
-
-
-
+   width ="800" height = "600" margin = "500%" />
+  </div>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/70fUpxdAr6t0LJw3xJmMhm?utm_source=generator" width="30%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   
 </body>
 
