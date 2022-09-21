@@ -2,31 +2,29 @@
 <html>
 
 <head>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Chopin</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />  
   <link href = "Style/chopinstyle.css" rel="stylesheet" type ="text/css" />
+  
+  <!-- Link Javascript library, called jquery, that enables the ability to     import the html code for the navigation bar for each page -->
   <script src= "https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"> </script>
-
   
 </head>
 
 <body>
 
-
-  <style> 
-  img {
-    width: 50%; 
-    height: 50%; 
-  }
-  </style>
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  
+  
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue"     defer></script> 
 
   <h1>Chopin</h1>
   
+  <!-- Importing the Navigation Bar from navigation.html-->
   <div id = "nav-placeholder">
   </div>
   <script>
@@ -35,22 +33,45 @@
     });
 </script>
 
+  <!-- Content on the page, styled with CSS Grid--> 
 
+  
  <div class = "container"> 
-   <div class = "box1">
-  <img src ="Images/Starrynight.jpg" width:"40" heigth: "30" alt:"">
+    <div class = "box1">
+    <img src = "Images/Starrynight.jpg" width= 90% height="90%">          
+    </div>
+   
+   <div class = "box2"> 
+
+    <!--Spotify Playlist Embed Code--> 
+   <iframe style="border-radius:12px"                                     src="https://open.spotify.com/embed/artist/7y97mc3bZRFXzT2szRM4L4? utm_source=generator" width="300" height="500" frameBorder="0"   allowfullscreen="" allow="autoplay; clipboard-write; encrypted-  media;fullscreen; picture-in-picture" loading="lazy" ></iframe>
+
+   </div>
+
+   <div class = "box3"> 
+     <br> <br> <br> 
+   <h2> Chopin: <br> <br>"The pianist's composer"</h2>
+     <br> <br> 
+     <p> Frédéric Chopin (1810-1849) was a brilliant Polish composer widely known for his creative and innovative piano pieces of classical music, which bring to life an feeling of solitude and appreciation.He was best known for utilizing national styles such as (mazurka) and reinvent them into commercially impacting pieces.<br> <br>
+       <p> 
+      Chopin’s passion for the piano started from early childhood, as his first concert took place in his 8th year of life. In total, he led approximately 30 concerts in his fruitful but short life.  His works impacted pianists all over the world, and his name is often remembered as a classic composer among orchestras of the highest grade. </p> <br> <br> <br> 
+
+     <div class = "chopinpic"> 
+       <img src = "Images/Chopin1.jpeg" width="400" height="200" opacity = 2 >
+     </div> 
      
    </div>
-   <div class = "box2"> 
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7y97mc3bZRFXzT2szRM4L4?utm_source=generator" width="250" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-   </div>
+
+   <div class = "box4">
+    <p style="color: white; font-size: 40px;"> Chopin's Biography: Britannica Website</h1> <br> <br>
+   <iframe style="border-radius:12px" src="https://www.britannica.com/biography/Frederic-Chopin" width="880" height="700" frameBorder="0" allowfullscreen fullscreen></iframe>
    
-   <div class = "box3"> Box 3</div>
-   <div class = "box4"> Box 4</div>
+   
+   </div>
+
+   
  </div>
-
-
-
+  
 
   
 </body>

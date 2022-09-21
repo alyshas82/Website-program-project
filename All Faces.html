@@ -2,58 +2,66 @@
 <html>
 
 <head>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>All Faces</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href = "Style/All Faces.css" rel="stylesheet" type ="text/css" />
+  
+  <!-- Link Javascript library, called jquery, that enables the ability to import the html code for the navigation bar for each page -->
+  
   <script src= "https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
   crossorigin="anonymous"></script>
+  
 </head>
 
-
-<body 
-
+<body>
+  
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 
-   
-  <h1>All Faces</h1>
+<!--Header + Navigation Bar-->
   
-  <div id = "nav-placeholder">
+  <h1>All Faces</h1>
+
+   <!-- Importing the Navigation Bar from navigation.html-->
+  <div id = "nav-placeholder1">
   </div>
   <script>
     $.get("navigation.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
+        $("#nav-placeholder1").replaceWith(data);
     });
 </script>
   
-
+<!-- Page content below-->
   
-
-<!-- content below -->
-
-
- <style> img {
-  width: 300px; 
-  position: relative; 
-  height: 300px; 
-  margin-top: 200px;
-  align-self: left;
- } 
+<!--Image Styling Css--> 
+  <style> 
+    
+    img {
+    width: 450px; 
+    height: 500px; 
+    }
  
- </style>
+  </style> 
 
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6WfljW3ZJXQGUU2pPu9RQt?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-  
-   <a href = <img src ="Images/Allfaces.jpg"></a>
- <img src ="https://i.ytimg.com/vi/bSBMnGrlQrQ/maxresdefault.jpg" 
-   width ="700" height = "500"/> 
-<div class="box">
+ <div class = "container">
+  <div class = "box11"> 
+    <img src = "Images/Allfaces2.jpg">
+  </div>
 
+  <div class = "box22"> 
+    <iframe style="border-radius:10px"            
+    src="https://open.spotify.com/embed/artist/6WfljW3ZJXQGUU2pPu9RQt?utm_source=generator" width="80%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+  </div>
+   
+<div class = "box33">
+  <iframe style="border-radius:10px" src="https://www.bandsintown.com/a/15138503?came_from=257" width="60%" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   
+ </div>
 
-
-
+ </div>
 
 </body>
 
