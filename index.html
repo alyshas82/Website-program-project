@@ -7,6 +7,10 @@
   <title>Home</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   
+  <!--Adding Icon Library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 
   <!-- Link Javascript library, called jquery, that enables the ability to import the html code for the navigation bar for each page -->
@@ -30,7 +34,38 @@
     });
 </script> 
 
+<!--Alternating Background Home Page Images-->
 
+<img src = "" id = "image" style >
+
+  <style> 
+  
+  img{
+  padding-top: 17%; 
+  padding-left: 5%; 
+  display:block; 
+  width: 1000px; 
+  height: 600px; 
+  margin: 0 auto; 
+  transition: 0.3s;
+}
+    
+  </style>
+<!--Function for alternating images of saved list-->
+  <script> 
+    let image = document.getElementById('image'); 
+    let images = ['Images/Classicmusic2.jpeg', 'Images/Indiemusic.jpg', 'Images/IndieMusic2.jpg', 'Images/Popmusic.jpg']
+    setInterval(function(){
+      let random = Math.floor(Math.random()* 4);
+      image.src = images [random];
+
+    },1500);
+  </script>
+
+  
+  <button class = "btn" style = "left:30%;"><i class = "fa fa-heart"></i></button>
+
+  
 </body>
 
 </html>

@@ -1,3 +1,9 @@
+h1{
+
+  left:46%;
+}
+
+
 h2{
   
   font-size: 30px; 
@@ -11,6 +17,7 @@ p{
 
 font-size: 20px; 
 text-align: center; 
+text-align: justify; 
 font-family: "Arial", helvetica, sans-sesrif; 
   color: rgb(255, 255, 255);
 }
@@ -56,4 +63,23 @@ font-family: "Arial", helvetica, sans-sesrif;
   background-color: rgb(197,195,208);
   grid-column: 1/4; 
   grid-row: 2/4;
+}
+.btn2{
+
+  display: box;
+  background-color: rgb(221, 218, 218); 
+  color: #727274; 
+  height: 50%; 
+  padding: 12px 16px; 
+  border-radius: 20px; 
+  font-size: 16px; 
+  cursor:pointer; 
+  border-color: white; 
+  grid-column: 4; 
+  grid-row: 1/4;
+  
+}
+
+.btn2:hover {
+  color: rgb(223, 200, 200)
 }
