@@ -71,19 +71,20 @@
  </div>
   
 <!-- Favourites Button-->
-<button id ="btn1"><i class = "fa fa-heart"></i></button>
-
-  <p id = "List"></p>
+<button id ="btn1" onclick ="Like()"><i class = "fa fa-heart"></i></button>
   
 <script>
   const btn = document.getElementById('btn1');
-btn.addEventListener('click', function onClick() {
+  let clicks = 0; 
+
+  function Like (){
+    clicks += 1; 
+    if (clicks === 1) {
       btn.style.backgroundColor = 'salmon';
       btn.style.color = 'white';
-      localStorage.setItem("like", "HERLOOOOO");
-      document.getElemntById('List').innnerHTML = localStorage.getItem("like");
-    }); 
-  
+      sessionStorage.setItem("like", "<a href = 'https://www.amazon.ca/Chopin-Legendary-Recording-Martha-Argerich/dp/B093RPHWRF'>Buy Chopin's 1965 Album</a>");}
+  }
+
 </script>
 
   

@@ -3,7 +3,8 @@
   width: 100%;
 }
 
-.container { padding-top: 12%;
+.container { 
+  padding-top: 12%;
   display:grid; 
   grid-template-columns: auto ;
   grid-auto-rows:minmax(100px, auto); 

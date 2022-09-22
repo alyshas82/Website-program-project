@@ -8,6 +8,7 @@
   <title>Harry Styles</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <link href="Style/Harrystyles.css" rel="stylesheet" type="text/css" />
+  <link href = "Style/button1.css" rel = "stylesheet" type = "text/css" />
   <!--Adding Icon Library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -71,9 +72,26 @@ height: 90%;
     <a href="https://www.chapters.indigo.ca/en-ca/house-and-home/harry-styles-harrys-house/194399974810-item.html?gclsrc=aw.ds&gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3eloILXkq912zr5cZmUMdr64wlSv_40PudRdnv_foIn7Lod9kj3hFQaAvJuEALw_wcB&s_campaign=goo-PMaxSmartShop_GM_Home_EN">
     <img alt= "Harry's House Vinyl" src= "Images/HarrysHouseV.jpg" width= "50%" height= "40%">  
   </div>
-  
 
-   
+<!-- Favourites Button-->
+<button id ="btn1" onclick ="Like()"><i class = "fa fa-heart"></i></button>
+
+  <script> 
+  const btn = document.getElementById('btn1');
+  let clicks = 0; 
+
+  function Like (){
+    clicks += 1; 
+    if (clicks === 1) {
+      btn.style.backgroundColor = 'salmon';
+      btn.style.color = 'white';
+      sessionStorage.setItem("like4", "<a href = ''>Buy Chopin's 1965 Album</a>");}
+  }
+  
+  
+  </script>
+
+
  </body>
 
  </html>

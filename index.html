@@ -34,7 +34,7 @@
     });
 </script> 
 
-<!--Alternating Background Home Page Images-->
+<!--Alternating Background Home Page Images HTML + Javascript-->
 
   <style> 
   
@@ -46,8 +46,7 @@
   height: 600px; 
   margin: 0 auto; 
   transition: 0.4s;
-}
-    
+} 
   </style>
 
 <img src = "" id = "image">
@@ -61,14 +60,34 @@
     },1500);
   </script>
 
-<!--
-  <button id = "RecomendationsList" onclick = "openList1"</button>
-  <div id = "RMdiv" style = "display:none"> 
-    <ul id = "RM">
-      </ul 
-  </div>
-  -->
+  <!--Button to show recommendations based on pages user liked--> 
+  
+<button class = "btnreveal" onclick = "showRecomendations()"><i class="fa fa-bars">RECOMENDATIONS</i></button>
 
+<p id = "List" style= "
+  position: absolute; 
+  left: 85%; 
+  top:35%; font-size: 16px;">**Click to list Products**</p>
+<p id  = "List2" style= "
+  position: absolute; 
+  left: 85%; 
+  top:38%; font-size: 16px;"></p>
+<p id  = "List3" style= "
+  position: absolute; 
+  left: 85%; 
+  top:41%; font-size: 16px;"></p>
+
+<script> 
+function showRecomendations(){
+  var x = sessionStorage.getItem("like");
+  var y = sessionStorage.getItem("like2");
+  var u = sessionStorage.getItem("like3");
+  
+  document.getElementById("List").innerHTML = x; 
+  document.getElementById("List2").innerHTML = y;
+  document.getElementById("List3").innerHTML = u; 
+}
+</script>
 </body>
 
 </html>
