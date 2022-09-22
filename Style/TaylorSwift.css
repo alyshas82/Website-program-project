@@ -1,0 +1,18 @@
+.container{
+  height: 100%; 
+  width: 100%;
+}
+
+.container {
+  
+  padding-top: 17%; 
+  display:grid; 
+  grid-gap: 1em; 
+  grid-template-columns: 1fr,2fr,1fr,2fr;
+  grid-auto-rows:minmax(100px, auo); 
+  justify-items: stretch; 
+  align-items:stretch; 
+}
+
+.container > div{
+  padding: 2px; 

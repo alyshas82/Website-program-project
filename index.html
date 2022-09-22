@@ -36,8 +36,6 @@
 
 <!--Alternating Background Home Page Images-->
 
-<img src = "" id = "image" style >
-
   <style> 
   
   img{
@@ -47,11 +45,12 @@
   width: 1000px; 
   height: 600px; 
   margin: 0 auto; 
-  transition: 0.3s;
+  transition: 0.4s;
 }
     
   </style>
-<!--Function for alternating images of saved list-->
+
+<img src = "" id = "image">
   <script> 
     let image = document.getElementById('image'); 
     let images = ['Images/Classicmusic2.jpeg', 'Images/Indiemusic.jpg', 'Images/IndieMusic2.jpg', 'Images/Popmusic.jpg']
@@ -62,10 +61,14 @@
     },1500);
   </script>
 
-  
-  <button class = "btn" style = "left:30%;"><i class = "fa fa-heart"></i></button>
+<!--
+  <button id = "RecomendationsList" onclick = "openList1"</button>
+  <div id = "RMdiv" style = "display:none"> 
+    <ul id = "RM">
+      </ul 
+  </div>
+  -->
 
-  
 </body>
 
 </html>

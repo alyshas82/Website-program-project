@@ -64,7 +64,7 @@ font-family: "Arial", helvetica, sans-sesrif;
   grid-column: 1/4; 
   grid-row: 2/4;
 }
-.btn2{
+.btn1{
 
   display: box;
   background-color: rgb(221, 218, 218); 
@@ -80,6 +80,6 @@ font-family: "Arial", helvetica, sans-sesrif;
   
 }
 
-.btn2:hover {
+.btn1:hover {
   color: rgb(223, 200, 200)
 }

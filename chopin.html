@@ -21,7 +21,6 @@
 </head>
 
 <body>
-
   
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue"     defer></script> 
 
@@ -47,7 +46,7 @@
    <div class = "box2"> 
 
     <!--Spotify Playlist Embed Code--> 
-   <iframe style="border-radius:12px"  src="https://open.spotify.com/embed/artist/7y97mc3bZRFXzT2szRM4L4? utm_source=generator" width="300" height="500" frameBorder="0"   allowfullscreen="" allow="autoplay; clipboard-write; encrypted-  media;fullscreen; picture-in-picture" loading="lazy" ></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7y97mc3bZRFXzT2szRM4L4?utm_source=generator" width="300" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
    </div>
 
@@ -67,12 +66,26 @@
 
    <div class = "box4">
     <p style="color: white; font-size: 40px; text-align: center;"> Chopin's Biography: Britannica Website</h1> <br> <br>
-   <iframe style="border-radius:12px" src="https://www.britannica.com/biography/Frederic-Chopin" width="880" height="700" frameBorder="0" allowfullscreen fullscreen></iframe>
+   <iframe style="border-radius:12px" src="https://www.britannica.com/biography/Frederic-Chopin" width="860" height="700" frameBorder="0" allowfullscreen fullscreen></iframe>
      </div>
  </div>
   
 <!-- Favourites Button-->
- <button class = "btn2"><i class = "fa fa-heart"></i></button>
+<button id ="btn1"><i class = "fa fa-heart"></i></button>
+
+  <p id = "List"></p>
+  
+<script>
+  const btn = document.getElementById('btn1');
+btn.addEventListener('click', function onClick() {
+      btn.style.backgroundColor = 'salmon';
+      btn.style.color = 'white';
+      localStorage.setItem("like", "HERLOOOOO");
+      document.getElemntById('List').innnerHTML = localStorage.getItem("like");
+    }); 
+  
+</script>
+
   
 </body>
 
