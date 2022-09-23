@@ -35,7 +35,18 @@
 <!-- Favourites Button-->
 <button id ="btn1" onclick ="Like()"><i class = "fa fa-heart"></i></button>
   
+<script> 
+ const btn = document.getElementById('btn1');
+  let clicks = 0; 
+  function Like (){
+    clicks += 1; 
+    if (clicks === 1) {
+      btn.style.backgroundColor = 'salmon';
+      btn.style.color = 'white';
+      sessionStorage.setItem("like5", "<a href = 'https://youtu.be/NzR-wzxH1_E' style = 'text-decoration:none;'>Taylor's Swift Online Album</a>");
+  }}
 
+</script>
 
 
 </body>

@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width">
   <title>Chopin</title>
   <link href="style.css" rel="stylesheet" type="text/css" />  
+
+  <!--Importing specific page stylesheet-->
   <link href = "Style/chopinstyle.css" rel="stylesheet" type ="text/css" />
+  
+  <!--Importing button CSS code for styling-->
   <link href = "Style/button1.css" rel = "stylesheet" type = "text/css" />
   
   <!--Adding Icon Library-->
@@ -24,6 +28,7 @@
   
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue"     defer></script> 
 
+  <!--Header + Navigation Bar (Imported from navigation.html)--> 
   <h1>Chopin</h1>
   
   <!-- Importing the Navigation Bar from navigation.html-->
@@ -35,22 +40,22 @@
     });
 </script>
 
-  <!-- Content on the page, styled with CSS Grid--> 
+<!-- Content on the page, styled with CSS Grid--> 
 
-  
+<!--BOX 1-->
  <div class = "container"> 
     <div class = "box1">
     <img src = "Images/Starrynight.jpg" width= 100% height="100%">          
     </div>
-   
-   <div class = "box2"> 
 
-    <!--Spotify Playlist Embed Code--> 
+<!--BOX 2 Spotify Playlist Embed Code--> 
+  <div class = "box2"> 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7y97mc3bZRFXzT2szRM4L4?utm_source=generator" width="300" height="500" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
    </div>
 
-   <div class = "box3"> 
+  <!--BOX 3-->
+  <div class = "box3"> 
      <br> <br> <br> 
    <h2> Chopin: <br> <br>"The pianist's composer"</h2>
      <br> <br> 
@@ -58,19 +63,22 @@
        <p> 
       Chopin’s passion for the piano started from early childhood, as his first concert took place in his 8th year of life, after creating his first composition at age 7. In total, he led approximately 30 concerts in his fruitful but short life.  His works impacted pianists all over the world, and his name is often remembered as a classic composer among orchestras of the highest grade. </p> <br> <br> <br> 
 
+<!--PICTURE-->
      <div class = "chopinpic"> 
        <img src = "Images/Chopin1.jpeg" width="500" height="300" opacity = 2 >
      </div> 
      
    </div>
 
+
+<!--BOX4-->
    <div class = "box4">
     <p style="color: white; font-size: 40px; text-align: center;"> Chopin's Biography: Britannica Website</h1> <br> <br>
    <iframe style="border-radius:12px" src="https://www.britannica.com/biography/Frederic-Chopin" width="860" height="700" frameBorder="0" allowfullscreen fullscreen></iframe>
      </div>
  </div>
   
-<!-- Favourites Button-->
+<!-- Favourites Button html + Javascript code(Code that, when like button is clicked saves a link to the Session Storage i.e when webpage is open)-->
 <button id ="btn1" onclick ="Like()"><i class = "fa fa-heart"></i></button>
   
 <script>
@@ -82,7 +90,7 @@
     if (clicks === 1) {
       btn.style.backgroundColor = 'salmon';
       btn.style.color = 'white';
-      sessionStorage.setItem("like", "<a href = 'https://www.amazon.ca/Chopin-Legendary-Recording-Martha-Argerich/dp/B093RPHWRF'>Buy Chopin's 1965 Album</a>");}
+      sessionStorage.setItem("like", "<a href = 'https://www.amazon.ca/Chopin-Legendary-Recording-Martha-Argerich/dp/B093RPHWRF' style = 'text-decoration:none;'>Buy Chopin's 1965 Album</a>");}
   }
 
 </script>

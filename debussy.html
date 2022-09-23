@@ -7,8 +7,13 @@
   <meta name="viewport" content="width=device-width">
   <title>Debussy</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <!--Importing specific page stylesheet-->
   <link href = "Style/debussystyle.css" rel= "stylesheet" type = "text/css"/>
+  
+  <!--Importing button CSS code for styling-->
   <link href = "Style/button1.css" rel = "stylesheet" type = "text/css" />
+  
   <!--Adding Icon Library-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -24,8 +29,6 @@
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 
   <!-- Header and Navigation Bar -->
-
-  
   <h1>Debussy</h1>
   
   <!-- Importing the Navigation Bar from navigation.html-->
@@ -38,31 +41,32 @@
   </script>
 
 
-<!--Rest of page content-->
-
-
+<!--Page content-->
 <div class = "container1"> 
 
 
+<!--BOX 5-->
   <div class = "box5">
   
   <img src = "Images/Lamer.png" width ="945px" height = "1100px">
   </div> 
 
+<!--BOX 6-->
   <div class = "box6">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/17HLZOVrZWcWr8wp7Cfz8Q?utm_source=generator" width="300" height="990" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div> 
 
-   <div class = "box7"> 
+<!--BOX 7-->
+  <div class = "box7"> 
    <h2></br>Claude Debussy <br> <br>"The pioneer of Impressionism"</h2>
      <br> <br> 
      <p> Claude Debussy, though born a little more than a century after Chopin, was a brilliant and even greater, at some point, a french pioneer in the way classical music was perceived and written. This composer was a prodigy who understood the harmony between various musical instrument families allowing for great symphonies to be born. <br><br>
        </p> 
       <p>His revolutionary work in the field of classical music precedes his character of change and movement which greatly resembled the popular form of "Impressionism" in several artworks. though he personally did not see himself as an impressionist, his work greatly reflects this movement as it greatly focuses on the mood and atmosphere it portrays. Like many composers from his time, Debussy was also a critic of compositions and writer of poems and music-related literature under the pen name of Monsieur Croche, translated to English as "Mr.Crook" </p>
      <br> <br> <br> 
-
    </div>
 
+<!--BOX 8-->
   <div class = "box8">
   
   <img src = "Images/Debussypic.jpg" width = "300" height = "300">
@@ -77,20 +81,19 @@
 </div>
 
 
-<!-- Favourites Button-->
+<!-- Favourites Button + Javascript code(Code that, when like button is clicked saves a link to the Session Storage i.e when the page is open)-->
 <button id ="btn1" onclick ="Like()"><i class = "fa fa-heart"></i></button>
   
 <script>
   const btn = document.getElementById('btn1');
   let clicks = 0; 
-
   function Like (){
     clicks += 1; 
     if (clicks === 1) {
       btn.style.backgroundColor = 'salmon';
       btn.style.color = 'white';
-      sessionStorage.setItem("like2", "<a href = 'https://www.amazon.ca/Debussy-La-Mer/dp/B0027CAQ7Q'>Buy La Mer Album</a>");}
-  }
+      sessionStorage.setItem("like2", "<a href = 'https://www.amazon.ca/Debussy-La-Mer/dp/B0027CAQ7Q' style = 'text-decoration:none;'>Buy La Mer Album</a>");
+  }}
 
 </script>
   

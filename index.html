@@ -24,7 +24,7 @@
 
   <h1>Find New Favourites</h1>
 
-  <!-- Importing the Navigation Bar from navigation.html-->
+<!-- Importing the Navigation Bar from navigation.html-->
   
   <div id = "nav-placeholder">
   </div>
@@ -46,9 +46,11 @@
   height: 600px; 
   margin: 0 auto; 
   transition: 0.4s;
-} 
-  </style>
+ } 
+</style>
 
+
+  
 <img src = "" id = "image">
   <script> 
     let image = document.getElementById('image'); 
@@ -62,32 +64,51 @@
 
   <!--Button to show recommendations based on pages user liked--> 
   
-<button class = "btnreveal" onclick = "showRecomendations()"><i class="fa fa-bars">RECOMENDATIONS</i></button>
+<button class = "btnreveal" onclick = "showRecommendations()"><i class="fa fa-bars">RECOMENDATIONS</i></button>
 
-<p id = "List" style= "
+<ol id = "List" style= "
   position: absolute; 
   left: 85%; 
-  top:35%; font-size: 16px;">**Click to list Products**</p>
-<p id  = "List2" style= "
+  top:35%; font-size: 16px;">**Click to list Products/ Videos**</ol>
+<ol id  = "List2" style= "
   position: absolute; 
   left: 85%; 
-  top:38%; font-size: 16px;"></p>
-<p id  = "List3" style= "
+  top:38%; font-size: 16px;"></ol>
+<ol id  = "List3" style= "
   position: absolute; 
   left: 85%; 
-  top:41%; font-size: 16px;"></p>
-
-<script> 
-function showRecomendations(){
-  var x = sessionStorage.getItem("like");
-  var y = sessionStorage.getItem("like2");
-  var u = sessionStorage.getItem("like3");
+  top:41%; font-size: 16px;"></ol>
   
-  document.getElementById("List").innerHTML = x; 
-  document.getElementById("List2").innerHTML = y;
-  document.getElementById("List3").innerHTML = u; 
-}
+<ol id  = "List4" style= "
+  position: absolute; 
+  left: 85%; 
+  top:44%; font-size: 16px;"></ol>
+  
+<ol id  = "List5" style= "
+  position: absolute; 
+  left: 85%; 
+  top:47%; font-size: 16px;"></ol>
+
+
+
+<!--Javascript for the button to import session storage variable to show specific recommendations-->
+  <script> 
+  function showRecommendations(){
+    var x = sessionStorage.getItem("like");
+    var y = sessionStorage.getItem("like2");
+    var u = sessionStorage.getItem("like3");
+    var i = sessionStorage.getItem("like4");
+    var o = sessionStorage.getItem("like5");
+    
+    document.getElementById("List").innerHTML = x; 
+    document.getElementById("List2").innerHTML = y;
+    document.getElementById("List3").innerHTML = u; 
+    document.getElementById("List4").innerHTML = i; 
+    document.getElementById("List5").innerHTML = o; 
+  }
 </script>
+
+  
 </body>
 
 </html>
